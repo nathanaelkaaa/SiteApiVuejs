@@ -247,9 +247,17 @@
 				/>
 				<label :for="branch">{{ branch }}</label>
 			</template>
-			<div class="bg">
+			
+			<div class='text' style="display: flex; flex-direction: column; justify-content: bottom; align-items: center; margin-top: 50px;">
+			<p style="color: #FFFFFF; ">{{ activity }}</p>
+			<div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+				<p style="margin-right: 50px;">type :{{ type }}</p><p>nombre de personnes :{{ participants }}</p>
+			</div>
+			</div>
+			</br>	
+			<div class="bg" style="margin-bottom: 200; margin-top: 50px;">
 				<div class='cont'>
-				<button class='button' v-on:click="fetchDataAsync">
+				<button class='button' v-on:click="fetchDataAsync" >
 
 
 					<div class='text'>
@@ -263,13 +271,6 @@
 				  </button>
 				</div>
 			</div>
-			<div class='text' style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-			<p style="color: #FFFFFF; margin-top: 400px;">{{ activity }}</p>
-			<div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
-				<p style="margin-right: 50px;">type :{{ type }}</p><p>nombre de personnes :{{ participants }}</p>
-			</div>
-			</div>
-			</br>	
 			
 			
 
